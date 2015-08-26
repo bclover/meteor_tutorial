@@ -5,7 +5,11 @@
 <body>
 <div class="container">
   <header>
-    <h1>"To Do" List</h1>
+    <h1>"To Do" List ({{getRemainingTaskCount}} Remaining)</h1>
+    <label class="hide-completed">
+      <input type="checkbox" checked="{{hideCompleted}}" />
+      Hide Completed Tasks
+    </label>
     <form class="new-task">
       <input type="text" name="text" placeholder="Type here to add a new task." />
     </form>
